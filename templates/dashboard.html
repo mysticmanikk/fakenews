@@ -1,0 +1,26 @@
+{% extends "index.html" %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-6">
+        <h2>Enter News Content</h2>
+        <form method="POST">
+            <div class="form-group">
+                <textarea name="content" rows="6" class="form-control" placeholder="Paste the news content here..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Predict</button>
+        </form>
+    </div>
+
+    <div class="col-md-6">
+        {% if prediction %}
+            <h3>Prediction Result:</h3>
+            {% if prediction == 'Fake' %}
+                <span class="badge badge-danger">{{ prediction }}</span>
+            {% else %}
+                <span class="badge badge-success">{{ prediction }}</span>
+            {% endif %}
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,110 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4 {
+    color: #333;
+    font-weight: bold;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #007bff;
+}
+
+.navbar-brand {
+    color: white !important;
+    font-size: 1.8em;
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+    font-size: 1.2em;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ff7b00 !important;
+}
+
+/* Home Page Styling */
+#accuracy-bar-chart {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+/* Form and Input Styling */
+textarea {
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 1em;
+    padding: 10px;
+    width: 100%;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #ff7b00;
+}
+
+/* Prediction Result Styling */
+.badge {
+    font-size: 1.5em;
+    padding: 10px;
+    color: white;
+}
+
+.badge-success {
+    background-color: #28a745;
+}
+
+.badge-danger {
+    background-color: #dc3545;
+}
+
+/* Layout Styling */
+.row {
+    margin-top: 30px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #f8f9fa;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+    color: #6c757d;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .navbar-nav .nav-link {
+        font-size: 1.1em;
+    }
+
+    .form-group textarea {
+        width: 100%;
+    }
+
+    .container {
+        margin-top: 20px;
+    }
+}

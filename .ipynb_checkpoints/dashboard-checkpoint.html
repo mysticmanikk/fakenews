@@ -1,0 +1,17 @@
+{% extends "index.html" %}
+
+{% block content %}
+<h2>Enter the News Content</h2>
+<form method="POST">
+    <div class="form-group">
+        <label for="content">News Content:</label>
+        <textarea class="form-control" id="content" name="content" rows="4" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+{% if prediction %}
+    <h3>Prediction: {{ prediction }}</h3>
+{% endif %}
+
+{% endblock %}
